@@ -1,0 +1,10 @@
+﻿
+	This is document .
+
+	これは文書　。
+
+	ة .
+
+	This program, produces the following binary:
+
+	このポログラム 　バイナリ 

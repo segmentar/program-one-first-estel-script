@@ -1,0 +1,64 @@
+ControlFlowSchedule :: {
+	~01 Control: . . . . .
+	~02 Flow: . . . . .
+	~03 Schedule: . . . . .
+}
+
+~10 File:
+.File
+C:\Users\todor\source\repos\program-one-first-estel-script\bin\Debug\XX\item.txt
+.Content <safe>
+.myForm ..Is ...TheBest ,  Hello World  , local  , local  global .  global .  .....
+.RenderFile:
+C:\Users\todor\source\repos\program-one-first-estel-script\bin\Debug\program-one-first-estel-script-working-directory-jtmkpjwd.rki\item.Example_True_1252_64_128
+
+~20 Flow:
+.Position
+82
+
+~30 Schedule:
+.FormArrayList
+Form :: FormData {
+.data
+	~01 FormBase: . . .
+	~02 FormLine: . . .
+	~03 PositionArray: . . . [2]
+	~04 IsDebug: True
+}
+
+~10 FormBase:
+FormBase :: {
+.compress
+	~01 IsDebug: True
+.compress-raw
+	~02 HeaderArray: <hidden>
+	~03 HeaderArraySafe: . . .
+	~04 Content: <hidden>
+	~05 ContentSafe: <safe><<  Hello World  , local  , local  global .  global .  >>
+}
+
+~10 <safe> HeaderArraySafe:
+myForm 
+Is 
+TheBest 
+
+~20 FormLine:
+FormLine :: {
+.compress
+	~01 IsDebug: True
+.compress-raw
+	~02 LocalLineArray: . . . <2>
+	~03 GlobalLineArray: . . . <2>
+}
+
+~LocalLineArray:
+global
+global
+
+~GlobalLineArray:
+local
+local
+
+~30 PositionArray:
+24
+78

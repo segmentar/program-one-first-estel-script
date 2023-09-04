@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C16ADD0-844F-4467-9980-63DC3CE3CD15}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>program_one_first_estel_script</RootNamespace>
+    <AssemblyName>program-one-first-estel-script</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Architecture\Architecture.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Default\Process.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Type\Forge\ForgeContentSafe.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\CompressRaw\FormBaseCompressRaw.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Compress\FormBaseCompress.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\FormBase.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Link\Policy\FormBaseLinkPolicy.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Object\FormBaseObject\FormBaseObject.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Prototype\FormBasePrototype.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Type\Forge\ForgeContent.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Type\Forge\ForgeHeaderArray.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Type\Make\Default\FormBaseMakeDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Type\Make\Default\Surface\FormBaseMakeDefaultSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Type\Sequence\Debug\FormBaseSequenceDebug.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Type\Sequence\FormBaseSequence.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\CompressRaw\FormLineCompressRaw.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Compress\FormLineCompress.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\FormLine.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Link\Policy\FormLine.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Object\FormLineObject\FormLineObject.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Prototype\FormLinePrototype.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Forge\ForgeSafeString.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Make\Default\FormLineMakeDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Make\Default\Surface\FormLineMakeDefaultSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Sequence\Debug\FormLineSequenceDebug.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Sequence\FormLineSequence.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Set\GlobalLine\FormLineSetGlobalLine.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Set\GlobalLine\Surface\FormLineSetGlobalLineSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Data\FormData.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Form.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Link\Policy\FormLinkPolicy.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Object\FormDataObject\FormDataObject.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Object\FormObject\FormObject.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Prototype\FormPrototype.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Flat\First\FirstByteArray\FirstByteArray.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Flat\First\FirstMemoryStream\FirstMemoryStream.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Flat\First\FirstBinaryWriter\FirstBinaryWriter.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Flat\Last\LastBinaryWriter\LastBinaryWriter.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Flat\Last\LastByteArray\LastByteArray.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Flat\Last\LastMemoryStream\LastMemoryStream.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Forge\ForgeAddressTuple.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Forge\ForgeLengthTuple.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Internal\Render\Render.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Forge\ForgeSeekPosition.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Make\Default\FormMakeDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Make\Default\Surface\FormMakeDefaultSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Sequence\Debug\FormSequenceDebug.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Sequence\FormSequence.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Set\Default\FormSetDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Type\Set\Default\Surface\FormSetDefaultSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Set\LocalLine\FormLineSetLocalLine.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Type\Set\LocalLine\Surface\FormLineSetLocalLineSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Data\ProgramData.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Link\Code\ProgramLinkCode.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Link\Immutable\ProgramLinkImmutable.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Link\Policy\ProgramLinkPolicy.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Default\ProgramModuleDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Function\01\First\ProgramModuleFirst.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Function\01\One\ProgramModuleOne.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Function\02\Second\ProgramModuleSecond.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Function\02\Two\ProgramModuleTwo.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Function\03\Third\ProgramModuleThree.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Function\03\Three\ProgramModuleThird.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\ProgramModule.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Object\ProgramDataObject\ProgramDataObject.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Object\ProgramObject\ProgramObject.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Program.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Prototype\ProgramPrototype.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramExplorer.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramFree.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramRender.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramSafeString.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramSafeArray.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramStatic.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Forge\ForgeWorkingDirectoryName.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ConsoleEscape\ConsoleEscape.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ConsoleReposition\ConsoleReposition.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ConsoleSetup\00\ConsoleSetup.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ConsoleSetup\01\ConsoleSetupOneFirst.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ConsoleSetup\02\ConsoleSetupTwoSecond.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ConsoleSplit\ConsoleSplit.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\CurrentSetup\CurrentSetup.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ObserveTuple\ObserveTuple.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Forge\ForgeWorkingDirectory.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Make\Default\ProgramMakeDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Make\Default\Surface\ProgramMakeDefaultSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Private\ConsoleDescriptor\ConsoleDescriptor.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Sequence\Debug\ProgramSequenceDebug.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Sequence\ProgramSequence.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\Directory\ProgramSetDirectory.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\Directory\Surface\ProgramSetDirectorySurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\File\ProgramSetFile.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\File\Surface\ProgramSetFileSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\CompressRaw\ControlFlowScheduleCompressRaw.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Compress\ControlFlowScheduleCompress.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\ControlFlowSchedule.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Default\Control\Control.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Default\Flow\Flow.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Default\Schedule\Schedule.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Link\Policy\ControlFlowScheduleLinkPolicy.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Object\ControlFlowScheduleObject\ControlFlowScheduleObject.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Prototype\ControlFlowSchedulePrototype.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Simple\ControlFlowScheduleSimple.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Type\Make\Default\ControlFlowScheduleMakeDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Type\Make\Default\Surface\ControlFlowScheduleMakeDefaultSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Type\Sequence\ControlFlowScheduleSequence.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Type\Sequence\Debug\ControlFlowScheduleSequenceDebug.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Type\Set\Default\ControlFlowScheduleSetDefault.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Type\Set\Default\Surface\ControlFlowScheduleSetDefaultSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\ObservableDirectory\ProgramSetObservableDirectory.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\ObservableDirectory\Surface\ProgramSetObservableDirectorySurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Void\ProgramVoidApplyFullExtension.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\4D\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\4D\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormBase\Meta\FormBaseMeta.txt" />
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\FormLine\Meta\FormLineMeta.txt" />
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Form\Meta\FormMeta.txt" />
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Meta\ProgramMeta.txt" />
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ReadMe.txt" />
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Document.txt" />
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\2D\Icon.ico" />
+    <Content Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\ControlFlowSchedule\Meta\ControlFlowScheduleMeta.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

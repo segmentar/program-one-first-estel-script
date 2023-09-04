@@ -1,0 +1,27 @@
+Form :: FormSequence {
+.debug
+	~01 controlFlowSchedule: . . .
+	~02 debug: True
+}
+
+~10 controlFlowSchedule:
+ControlFlowSchedule :: {
+	~01 Control: . . . . .
+	~02 Flow: . . . . .
+	~03 Schedule: . . . . .
+}
+
+~10 File:
+.File
+C:\Users\todor\source\repos\program-one-first-estel-script\bin\Debug\XX\item.txt
+.Content <safe>
+.myForm ..Is ...TheBest ,  Hello World  , local  , local  global .  global .  .....
+.RenderFile:
+C:\Users\todor\source\repos\program-one-first-estel-script\bin\Debug\program-one-first-estel-script-working-directory-jtmkpjwd.rki\item.Example_True_1252_64_128
+
+~20 Flow:
+.Position
+0
+
+~30 Schedule:
+.FormArrayList

@@ -1,0 +1,29 @@
+
+	O META o no unused namespace(s)
+
+	O TYPE o no unused namespace(s)
+
+	O LINK o no unused namespace(s)
+
+	O DEFAULT o no unused namespace(s)
+
+sequence ControlFlowSchedule
+
+	>Compress
+	<<ControlFlowScheduleCompress.cs
+
+	>CompressRaw
+	<<ControlFlowScheduleCompressRaw.cs
+
+	>Object
+	>>ControlFlowScheduleObject
+	<<<ControlFlowScheduleObject.cs
+
+	>Prototype
+	<<ControlFlowSchedulePrototype.cs
+
+	<ControlFlowSchedule.cs
+
+	/simple\SIMPLE/ControlFlowScheduleSimple.cs\
+
+end sequence

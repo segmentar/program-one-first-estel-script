@@ -1,0 +1,10 @@
+FormLine :: FormLineSequence {
+	~01 content: 
+Hello World
+, local
+, local
+global .
+global .
+
+	~02 debug: True
+}

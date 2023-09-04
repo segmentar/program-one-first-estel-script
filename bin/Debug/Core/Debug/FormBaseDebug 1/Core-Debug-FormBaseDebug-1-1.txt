@@ -1,0 +1,4 @@
+FormBase :: FormBaseSequence {
+.debug
+	~01 debug: True
+}
