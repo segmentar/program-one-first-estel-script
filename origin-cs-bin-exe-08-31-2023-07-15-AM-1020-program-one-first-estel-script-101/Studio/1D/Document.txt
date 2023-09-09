@@ -1,10 +1,11 @@
 ﻿
 	This is document .
 
-	これは文書　。
+	これ　は　文書　です　。
 
-	ة .
+	ة . (mustanad)
 
 	This program, produces the following binary:
 
-	このポログラム 　バイナリ 
+	この　プログラム　次の　バイナリ　を　生成します：
+

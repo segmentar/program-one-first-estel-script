@@ -4,20 +4,85 @@ namespace Core
 {
     using System;
 
-    using System.Text;
+    using System.Collections;
 
-    internal static class Architecture
+    internal static class ArchitecturePageOneFirst
     {
-        internal static String ExtensionName = ProgramImmutable.ExtensionNameDefault;
+        internal static ConsoleColor BackgroundColor;
 
-        internal static Boolean EndianFormat = ProgramImmutable.EndianFormatDefault;
+        internal static ConsoleColor ForegroundColor;
 
-        internal static Encoding StringCodec = ProgramImmutable.StringCodecDefault;
+        internal static Boolean IsExternalCall;
 
-        internal static Int32 ChunkSize = 64;//ProgramImmutable.ChunkSizeDefault;
+        internal static ArrayList ArgumentList;
 
-        internal static Int32 StartBoundary = ProgramImmutable.StartBoundaryDefault;
+        internal static Boolean HasEscapeCharacter;
 
-        internal static String FullExtension = ProgramImmutable.FullExtensionDefault;
+        internal static Char EscapeCharacter;
+
+        internal static Boolean HasOutputDirectory;
+
+        internal static String OutputDirectory;
+
+        static ArchitecturePageOneFirst()
+        {
+            BackgroundColor = ProgramDefaultPageOneFirst.BackgroundColorDefault;
+
+            ForegroundColor = ProgramDefaultPageOneFirst.ForegroundColorDefault;
+
+            IsExternalCall = ProgramDefaultPageOneFirst.IsExternalCallDefault;
+
+            ArgumentList = ProgramDefaultPageOneFirst.ArgumentListDefault;
+
+            HasEscapeCharacter = ProgramDefaultPageOneFirst.HasEscapeCharacterDefault;
+
+            EscapeCharacter = ProgramDefaultPageOneFirst.EscapeCharacterDefault;
+
+            HasOutputDirectory = ProgramDefaultPageOneFirst.HasOutputDirectoryDefault;
+
+            OutputDirectory = ProgramDefaultPageOneFirst.OutputDirectoryDefault;
+
+            return;
+        }
     }
 }
+
+namespace Core
+{
+    using System;
+
+    using System.Text;
+
+    internal static class ArchitecturePageTwoSecond
+    {
+        internal static String ExtensionName;
+
+        internal static Boolean EndianFormat;
+
+        internal static Encoding StringCodec;
+
+        internal static Int32 ChunkSize;
+
+        internal static Int32 StartBoundary;
+
+        internal static String FullExtension;
+
+        static ArchitecturePageTwoSecond()
+        {
+            ExtensionName = ProgramDefaultPageTwoSecond.ExtensionNameDefault;
+
+            EndianFormat = ProgramDefaultPageTwoSecond.EndianFormatDefault;
+
+            StringCodec = ProgramDefaultPageTwoSecond.StringCodecDefault;
+
+            ChunkSize = ProgramDefaultPageTwoSecond.ChunkSizeDefault;
+
+            StartBoundary = ProgramDefaultPageTwoSecond.StartBoundaryDefault;
+
+            FullExtension = ProgramDefaultPageTwoSecond.FullExtensionDefault;
+
+            return;
+        }
+    }
+}
+

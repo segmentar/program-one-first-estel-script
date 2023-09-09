@@ -14,7 +14,7 @@ namespace Core
 
             Form[] formArray;
 
-            formArray = Form.FormDefaultSetSurface(controlFlowScheduleArray);
+            formArray = Form.FormDefaultSetSurface(controlFlowScheduleArray, module.First.WorkingDirectory);
 
             ProgramModuleFunctionThird third;
 

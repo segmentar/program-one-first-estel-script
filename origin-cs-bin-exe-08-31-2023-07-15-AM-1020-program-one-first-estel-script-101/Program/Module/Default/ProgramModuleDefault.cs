@@ -12,6 +12,8 @@ namespace Core
 
             program = Program.MakeProgramDefaultSurface();
 
+            program.SettingSetup();
+
             program.ConsoleSetup();
 
             ProgramModule module;
@@ -25,13 +27,6 @@ namespace Core
             module = ProgramModuleFunctionTwo(module);
 
             module = ProgramModuleFunctionThree(module);
-
-            foreach (Form form in module.Third.FormArray)
-            {
-                form.Render();
-
-                continue;
-            }
 
             return module;
         }

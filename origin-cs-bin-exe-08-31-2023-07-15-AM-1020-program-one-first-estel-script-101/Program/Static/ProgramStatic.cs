@@ -46,23 +46,48 @@ namespace Core
 
         internal static void Manual()
         {
-            ProgramModule programModule = ProgramModule.ProgramModuleDefault();
-            
+            Free(ProgramFolderSetSurface(Directory.GetCurrentDirectory()));
+
+            ProgramModule programModule = ProgramModule.ProgramModuleAction();
+
             return;
         }
 
         internal static void Bundle()
         {
+            try
+            {
+                Interop.Subf01();
+
+                Interop.Reff02();
+
+                Interop.Charf03();
+
+                Interop.Escf04();
+
+                Interop.Finf05();
+            }
+            catch (Exception exception)
+            {
+                String stringitem;
+
+                stringitem = exception.ToString();
+
+                Console.Clear();
+
+                Console.Out.WriteLine(stringitem);
+
+                Console.In.ReadLine();
+
+                Environment.Exit(0);
+            }
 #if DEBUG
             Procedure();
 #endif
-
             Manual();
-
 #if DEBUG
             Raise();
 #endif
-
             return;
         }
 
@@ -85,6 +110,13 @@ namespace Core
             if (FormPolicy.FormInfoPolicy is true)
             {
                 Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Info}-FormInfo", FormPolicy.FormArrayList.ToArray());
+            }
+            else
+                "false".ToString();
+
+            if (FormBasePolicy.FormBaseInfoPolicy is true)
+            {
+                Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Info}-FormBaseInfo", FormBasePolicy.FormBaseArrayList.ToArray());
             }
             else
                 "false".ToString();

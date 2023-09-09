@@ -10,22 +10,7 @@ namespace Core
     {
         internal static void Render(String name, params Object[] objectArray)
         {
-            var dash = Convert.ToChar(45);
-
-            var split = name.Split(new String[] { dash.ToString() }, StringSplitOptions.None);
-
-            var path_NAME_directory = String.Empty;
-
-            foreach (String stringItem in split)
-            {
-                path_NAME_directory = Path.Combine(path_NAME_directory, stringItem);
-
-                continue;
-            }
-
-            path_NAME_directory = path_NAME_directory + ' ' + objectArray.Length;
-
-            var path_DIRECTORY_full_name = Path.Combine(Directory.GetCurrentDirectory(), path_NAME_directory);
+            var path_DIRECTORY_full_name = Path.Combine(Directory.GetCurrentDirectory(), RenderDirectoryName(name, objectArray.Length));
 
             if (Directory.Exists(path_DIRECTORY_full_name) is false)
             {
@@ -44,22 +29,20 @@ namespace Core
             {
                 zeroth = zeroth + 1;
 
-                var ordinal = (zeroth + 1);
-
                 String stringItem;
 
                 if (objectItem == default)
                 {
-                    stringItem = "This object just so happened to be a default" + ' ' + '.' + ' ' + ":(";
+                    stringItem = RenderDefaultName();
                 }
                 else
                 {
                     stringItem = objectItem.ToString();
                 }
 
-                var path_NAME_file = $"{name}-{ordinal}-{objectArray.Length}";
+                var ordinal = (zeroth + 1);
 
-                var path_FILE_filename = Path.Combine(path_DIRECTORY_full_name, path_NAME_file);
+                var path_FILE_filename = Path.Combine(path_DIRECTORY_full_name, RenderFileName(name, ordinal, objectArray.Length));
 
                 var path_FILE_filename_with_extension = Path.ChangeExtension(path_FILE_filename, "txt");
 

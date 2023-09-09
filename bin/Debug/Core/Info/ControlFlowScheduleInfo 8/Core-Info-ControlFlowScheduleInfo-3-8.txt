@@ -1,0 +1,21 @@
+ControlFlowSchedule :: {
+.compress
+	~01 IsDebug: False
+.compress-raw
+	~02 Control: . . . . . <2>
+	~03 Flow: . . . . . <1>
+	~04 Schedule: . . . . . <1>
+}
+
+~10 File:
+.File
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\bin\Debug\program-one-first-estel-script-working-directory-tybg4tia.g0l\Form (1).CoolExtension_True_1252_512_128
+.Content <safe>
+ ä       €   €   €   €   €                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       mySecondForm                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   L  , tabulation program-0 ordinal-2 little-endian-signed-integer-bit-8 A: 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Ftabulation program-0 ordinal-2 little-endian-signed-integer-bit-8 A: 1
+
+~20 Flow:
+.Position
+0
+
+~30 Schedule:
+.FormArrayList <0>

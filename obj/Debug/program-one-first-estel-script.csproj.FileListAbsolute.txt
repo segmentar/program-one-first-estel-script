@@ -6,3 +6,11 @@ C:\Users\todor\source\repos\program-one-first-estel-script\obj\Debug\program-one
 C:\Users\todor\source\repos\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.csproj.CoreCompileInputs.cache
 C:\Users\todor\source\repos\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.exe
 C:\Users\todor\source\repos\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.pdb
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\bin\Debug\program-one-first-estel-script.exe.config
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\bin\Debug\program-one-first-estel-script.exe
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\bin\Debug\program-one-first-estel-script.pdb
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.csproj.AssemblyReference.cache
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.csproj.SuggestedBindingRedirects.cache
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.csproj.CoreCompileInputs.cache
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.exe
+C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\obj\Debug\program-one-first-estel-script.pdb

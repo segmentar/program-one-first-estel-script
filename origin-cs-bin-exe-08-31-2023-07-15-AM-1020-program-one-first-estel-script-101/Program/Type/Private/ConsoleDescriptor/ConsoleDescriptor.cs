@@ -10,38 +10,44 @@ namespace Core
         {
             String stringResult = default;
 
-            var size_BIT = (8 * 1) + (5 * 32);
+            var size_BIT = (8 * 1) + (7 * 32);
 
             var size_BYTE = (size_BIT / 8);
 
-            ApplyFullExtensionVoid();
+            ProgramApplyFullExtensionVoid();
 
             stringResult = String.Join('\n'.ToString(), new String[] {
 
                 String.Empty,
-                String.Empty + '\t' + $"This is `{ProgramImmutable.ProgramName}`" + ' ' + '.',
+                String.Empty + '\t' + 'O' + ':' +  $"This is `{ProgramDefaultPageTwoSecond.ProgramNameDefault}`" + ' ' + '.',
                 String.Empty,
-                String.Empty + '\t' + 'O' + ':' + ' ' + "Enter name and value to modify variable" + ' ' + '.',
+                String.Empty + '\t' + 'o' + ':' + ' ' + "Enter name and value to modify variable" + ' ' + '.',
                 String.Empty,
                 String.Empty + '\t' + 'o' + ':' + ' ' + $"Size of data header is {size_BIT} bit(s) or {size_BYTE} byte(s)" + ' ' + '.',
                 String.Empty,
                 String.Empty + '\t' + 'o' + ':' + ' ' + "Enter `escape` to run and exit" + ' ' + '.',
                 String.Empty,
-                String.Empty + '\t' + '~' + ' ' + nameof(Architecture.ExtensionName) + ':' + ' ' + Architecture.ExtensionName,
+                String.Empty + '\t' + '~' + ' ' + nameof(ArchitecturePageOneFirst.OutputDirectory) + ':' + ' ' + ArchitecturePageOneFirst.OutputDirectory,
                 String.Empty,
-                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-8" + ' ' + nameof(Architecture.EndianFormat) + ':' + ' ' + Architecture.EndianFormat,
+                String.Empty + '\t' + '~' + ' ' + nameof(ArchitecturePageTwoSecond.ExtensionName) + ':' + ' ' + ArchitecturePageTwoSecond.ExtensionName,
                 String.Empty,
-                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + nameof(Architecture.StringCodec) + ':' + ' ' + Architecture.StringCodec,
+                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-8" + ' ' + nameof(ArchitecturePageTwoSecond.EndianFormat) + ':' + ' ' + ArchitecturePageTwoSecond.EndianFormat,
+                String.Empty,
+                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + nameof(ArchitecturePageTwoSecond.StringCodec) + ':' + ' ' + ArchitecturePageTwoSecond.StringCodec,
                 String.Empty, 
-                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + nameof(Architecture.ChunkSize) + ':' + ' ' + Architecture.ChunkSize,
+                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + nameof(ArchitecturePageTwoSecond.ChunkSize) + ':' + ' ' + ArchitecturePageTwoSecond.ChunkSize,
                 String.Empty,
-                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + nameof(Architecture.StartBoundary) + ':' + ' ' + Architecture.StartBoundary,
+                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + nameof(ArchitecturePageTwoSecond.StartBoundary) + ':' + ' ' + ArchitecturePageTwoSecond.StartBoundary,
+                String.Empty,
+                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + "header-address" + ':' + ' ' + "<automatic>",
+                String.Empty,
+                String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + "content-address" + ':' + ' ' + "<automatic>",
                 String.Empty,
                 String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + "local-line-array-address" + ':' + ' ' + "<automatic>",
                 String.Empty,
                 String.Empty + '\t' + '~' + ' ' + "endian-unsigned-integer-bit-32" + ' ' + "global-line-array-address" + ':' + ' ' + "<automatic>",
                 String.Empty,
-                String.Empty + '\t' + '~' + ' ' + nameof(Architecture.FullExtension) + ':' + ' ' + Architecture.FullExtension,
+                String.Empty + '\t' + '~' + ' ' + nameof(ArchitecturePageTwoSecond.FullExtension) + ':' + ' ' + ArchitecturePageTwoSecond.FullExtension,
                 String.Empty,
                 String.Empty + '\t' + "Prompt" + ':' + ' ',
                 String.Empty

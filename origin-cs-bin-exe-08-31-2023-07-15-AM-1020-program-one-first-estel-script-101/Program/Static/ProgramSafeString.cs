@@ -4,8 +4,6 @@ namespace Core
 {
     using System;
 
-    using System.Collections;
-
     internal partial class Program
     {
         internal static String SafeString(Object objectItem)

@@ -1,0 +1,13 @@
+FormLine :: {
+.compress
+	~01 IsDebug: True
+.compress-raw
+	~02 LocalLineArray: . . . <0>
+	~03 GlobalLineArray: . . . <1>
+}
+
+~LocalLineArray:
+
+
+~GlobalLineArray:
+tabulation not-program-0 ordinal 1 little-endian-signed-integer-bit-8 C: 3

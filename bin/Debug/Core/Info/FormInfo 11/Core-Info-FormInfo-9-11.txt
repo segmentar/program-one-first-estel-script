@@ -1,0 +1,46 @@
+Form :: FormData {
+.data
+	~01 Measure: . . .
+	~02 FormBase: . . .
+	~03 FormLine: . . .
+	~04 PositionArray: . . . [2]
+	~05 IsDebug: True
+}
+
+~10 Measure:
+Core.FormMeasure
+
+~20 FormBase:
+FormBase :: {
+.compress
+	~01 IsDebug: True
+.compress-raw
+	~02 HeaderArray: <hidden>
+	~03 HeaderArraySafe: . . .
+	~04 Content: <hidden>
+	~05 ContentSafe: <safe><<  , tabulation program-0 ordinal-2 little-endian-signed-integer-bit-8 A: 1  >>
+}
+
+~10 <safe> HeaderArraySafe:
+    
+mySecondForm 
+ 
+
+~30 FormLine:
+FormLine :: {
+.compress
+	~01 IsDebug: True
+.compress-raw
+	~02 LocalLineArray: . . . <0>
+	~03 GlobalLineArray: . . . <1>
+}
+
+~LocalLineArray:
+
+
+~GlobalLineArray:
+tabulation program-0 ordinal-2 little-endian-signed-integer-bit-8 A: 1
+
+~40 PositionArray:
+127
+204

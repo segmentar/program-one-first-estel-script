@@ -4,58 +4,40 @@ namespace Core
 {
     using System;
 
-    using System.Collections;
-
     internal partial class Program
     {
         internal static String[] SafeArray(params Object[] array)
         {
             String[] arrayResult = default;
 
-            var list = new ArrayList();
+            var length = array.Length;
 
-            foreach (Object objectItem in array)
+            String[] stringArray;
+
+            stringArray = new String[length];
+
+            var indexer = 0;
+
+            do
             {
-                String stringItem;
+                Boolean shouldBreak;
 
-                stringItem = objectItem.ToString();
+                shouldBreak = (indexer == length) is true;
 
-                Char[] characterArray;
-
-                characterArray = stringItem.ToCharArray();
-
-                var zeroth = -1;
-
-                foreach (Char character in stringItem)
+                if (shouldBreak is true)
                 {
-                    zeroth = zeroth + 1;
-
-                    if (Char.IsControl(character) is false)
-                    {
-                        continue;
-                    }
-                    else
-                        "false".ToString();
-
-                    var whitespace = Convert.ToChar(32);
-
-                    characterArray[zeroth] = whitespace;
-
-                    continue;
+                    break;
                 }
+                else
+                    "false".ToString();
 
-                String stringEntry;
+                stringArray[indexer] = SafeString(array[indexer]);
 
-                stringEntry = new String(characterArray);
+                indexer = indexer + 1;
 
-                list.Add(stringEntry);
+            } while (true);
 
-                continue;
-            }
-
-            var reflect = (String[])(list.ToArray(typeof(String)) as Array);
-
-            arrayResult = reflect;
+            arrayResult = stringArray;
 
             return arrayResult;
         }

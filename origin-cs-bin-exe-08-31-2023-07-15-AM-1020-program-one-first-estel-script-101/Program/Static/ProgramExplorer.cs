@@ -8,9 +8,15 @@ namespace Core
 
     internal partial class Program
     {
-        internal static void Explorer(String value, Int32 ordinal)
+        internal static void Explorer(String path, Int32 ordinal)
         {
-            if ((ordinal > 5) is true)
+            Boolean shouldReturn;
+
+            var boolean_BIGGER_THAN = (ordinal > 5);
+
+            shouldReturn = boolean_BIGGER_THAN is true;
+
+            if (shouldReturn is true)
             {
                 return;
             }
@@ -19,14 +25,16 @@ namespace Core
 
             ProcessStartInfo processStartInfo;
 
-            processStartInfo = new ProcessStartInfo("explorer", value);
+            processStartInfo = new ProcessStartInfo("explorer", path);
 
             Process process;
 
-            using (process = new Process())
-            {
-                process.StartInfo = processStartInfo;
+            process = new Process();
 
+            process.StartInfo = processStartInfo;
+
+            using (process)
+            {
                 if (process.Start())
                 {
                     goto skip;
@@ -35,7 +43,7 @@ namespace Core
                 {
                     var next = (ordinal + 1);
 
-                    Explorer(value, next);
+                    Explorer(path, next);
                 }
 
             skip:

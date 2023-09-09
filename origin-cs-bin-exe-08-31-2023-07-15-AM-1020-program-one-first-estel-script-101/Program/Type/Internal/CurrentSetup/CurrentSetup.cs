@@ -18,11 +18,11 @@ namespace Core
 
             var path_DIRECTORY_full_name__CURRENT = Path.GetDirectoryName(path_FILE_filename_with_extension__CURRENT);
 
-            Tuple<String, String> currentTuple;
+            Tuple<String, String> tuple;
 
-            currentTuple = new Tuple<String, String>(path_FILE_filename_with_extension__CURRENT, path_DIRECTORY_full_name__CURRENT);
+            tuple = new Tuple<String, String>(path_FILE_filename_with_extension__CURRENT, path_DIRECTORY_full_name__CURRENT);
 
-            tupleResult = currentTuple;
+            tupleResult = tuple;
 
             return tupleResult;
         }

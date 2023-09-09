@@ -10,15 +10,15 @@ namespace Core
         {
             Tuple<String[], String[]> tupleResult = default;
 
-            var array_DIRECTORY = ProgramDirectorySetSurface(directory);
+            var array_DIRECTORY = ProgramFolderSetSurface(directory);
 
             var array_FILE = ProgramFileSetSurface(array_DIRECTORY);
 
-            Tuple<String[], String[]> observeTuple;
+            Tuple<String[], String[]> tuple;
 
-            observeTuple = new Tuple<String[], String[]>(array_FILE, array_DIRECTORY);
+            tuple = new Tuple<String[], String[]>(array_FILE, array_DIRECTORY);
 
-            tupleResult = observeTuple;
+            tupleResult = tuple;
 
             return tupleResult;
         }

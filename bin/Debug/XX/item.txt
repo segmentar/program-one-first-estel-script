@@ -1,7 +1,11 @@
 .myForm ..Is ...TheBest ,
-Hello World
-, local
-, local
-global .
-global .
+, tabulation program-0 ordinal-3 little-endian-signed-integer-bit-8 B: 2
+.....
+
+.mySecondForm .. ,
+, tabulation program-0 ordinal-2 little-endian-signed-integer-bit-8 A: 1
+.....
+
+.diff ..or ,
+, tabulation not-program-0 ordinal 1 little-endian-signed-integer-bit-8 C: 3
 .....

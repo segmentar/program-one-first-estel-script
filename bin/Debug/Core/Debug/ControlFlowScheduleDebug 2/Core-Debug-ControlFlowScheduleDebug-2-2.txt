@@ -1,12 +1,9 @@
 ControlFlowSchedule :: ControlFlowScheduleSequence {
 .debug
-	~01 file: C:\Users\todor\source\repos\program-one-first-estel-script\bin\Debug\XX\item.txt
-	~02 content: .myForm ..Is ...TheBest ,
-Hello World
-, local
-, local
-global .
-global .
-.....
+	~01 file: C:\Users\todor\Desktop\Origin Folder\program-one-first-estel-script\bin\Debug\Core\Debug\ProgramDebug 1\Core-Debug-ProgramDebug-1-1.txt
+	~02 content: Program :: ProgramSequence {
+.debug
+	~01 debug: True
+}
 	~03 debug: True
 }
