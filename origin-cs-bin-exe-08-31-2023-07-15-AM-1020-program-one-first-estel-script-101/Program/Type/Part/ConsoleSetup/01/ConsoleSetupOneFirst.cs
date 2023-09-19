@@ -8,7 +8,7 @@ namespace Core
     {
         private void ConsoleSetupOneFirst()
         {
-            Console.Title = ProgramDefaultPageTwoSecond.ProgramNameDefault;
+            Console.Title = ImmutablePageOneFirst.Title;
 
             Console.BackgroundColor = ConsoleColor.Blue;
 

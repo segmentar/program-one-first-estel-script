@@ -44,7 +44,7 @@ namespace Core
 
                     character = second[0];
 
-                    Interop.Clsf06(1, character, stringArray);
+                    Interop.Clsf09OL(1, character, stringArray);
                 }
                 else
                     "false".ToString();
@@ -88,6 +88,14 @@ namespace Core
 
                 switch (name)
                 {
+                    case nameof(ArchitecturePageOneFirst.InputDirectory):
+                        Specialize.SetInputDirectory(value, true);
+                        break;
+
+                    case nameof(ArchitecturePageOneFirst.OutputDirectory):
+                        Specialize.SetOutputDirectory(value, true);
+                        break;
+
                     case nameof(ArchitecturePageTwoSecond.ExtensionName):
                         ArchitecturePageTwoSecond.ExtensionName = value;
                         break;

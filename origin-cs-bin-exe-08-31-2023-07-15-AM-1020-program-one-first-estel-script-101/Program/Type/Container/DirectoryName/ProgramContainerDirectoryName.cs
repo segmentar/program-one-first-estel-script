@@ -14,13 +14,13 @@ namespace Core
 
             var list = new ArrayList();
 
-            foreach (String stringItem in directoryArray)
+            foreach (String directory in directoryArray)
             {
-                foreach (var item_STRING in Enum.GetNames(typeof(ProgramCode.ObservableDirectory)))
+                foreach (String name in Enum.GetNames(typeof(ProgramCode.SpecialDirectory)))
                 {
                     Tuple<String, String> tuple;
 
-                    tuple = new Tuple<String, String>(stringItem, item_STRING);
+                    tuple = new Tuple<String, String>(directory, name);
 
                     list.Add(tuple);
 

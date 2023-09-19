@@ -12,7 +12,9 @@ namespace Core
 
             var path_NAME_file = $"{name}-{ordinal}-{length}";
 
-            stringResult = path_NAME_file;
+            var result = path_NAME_file;
+
+            stringResult = result;
 
             return stringResult;
         }

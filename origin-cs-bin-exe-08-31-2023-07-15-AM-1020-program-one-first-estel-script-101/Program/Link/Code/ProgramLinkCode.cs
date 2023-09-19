@@ -6,12 +6,11 @@ namespace Core
 
     internal partial class ProgramCode
     {
-        internal enum ObservableDirectory
+        internal enum SpecialDirectory
         {
             Unset,
-            Core,
-            Debug,
-            Info
+            Core_Debug,
+            Core_Info
         }
     }
 }

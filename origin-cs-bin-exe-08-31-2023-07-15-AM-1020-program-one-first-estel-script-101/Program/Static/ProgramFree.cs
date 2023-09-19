@@ -12,21 +12,25 @@ namespace Core
         {
             foreach (Tuple<String, String> tuple in ProgramDirectoryNameContainerSurface<Tuple<String, String>>(directoryArray))
             {
-                String name;
+                String directory, name;
+
+                directory = tuple.Item1;
 
                 name = tuple.Item2;
 
-                var path_NAME_directory = new DirectoryInfo(tuple.Item1).Name;
+                var path_NAME_directory = new DirectoryInfo(directory).Name;
 
-                var match = true;
+                var boolean_safe_DIRECTORY_is = true;
 
-                match = match && (name == path_NAME_directory) is true;
+                boolean_safe_DIRECTORY_is = boolean_safe_DIRECTORY_is && (name == path_NAME_directory) is true;
 
-                match = match && Directory.Exists(tuple.Item1) is true;
+                boolean_safe_DIRECTORY_is = boolean_safe_DIRECTORY_is && Directory.Exists(tuple.Item1) is true;
 
-                Boolean shouldContinue;
+                Boolean isDirectoryCheck, shouldContinue;
 
-                shouldContinue = match is false;
+                isDirectoryCheck = boolean_safe_DIRECTORY_is is true;
+
+                shouldContinue = isDirectoryCheck is false;
 
                 if (shouldContinue is true)
                 {
@@ -35,7 +39,7 @@ namespace Core
                 else
                     "false".ToString();
 
-                Directory.Delete(tuple.Item1, true);
+                Directory.Delete(directory, true);
 
                 continue;
             }

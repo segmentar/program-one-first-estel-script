@@ -10,6 +10,8 @@ namespace Core
     {
         internal static void Render(String name, params Object[] objectArray)
         {
+            name = RenderSpecialName(name);
+
             var path_DIRECTORY_full_name = Path.Combine(Directory.GetCurrentDirectory(), RenderDirectoryName(name, objectArray.Length));
 
             if (Directory.Exists(path_DIRECTORY_full_name) is false)
@@ -31,9 +33,15 @@ namespace Core
 
                 String stringItem;
 
-                if (objectItem == default)
+                var boolean_contagious_DEFAULT_is = (objectItem == default);
+
+                Boolean isDefaultCheck;
+
+                isDefaultCheck = boolean_contagious_DEFAULT_is is true;
+
+                if (isDefaultCheck)
                 {
-                    stringItem = RenderDefaultName();
+                    stringItem = ImmutablePageOneFirst.SpecialError;
                 }
                 else
                 {

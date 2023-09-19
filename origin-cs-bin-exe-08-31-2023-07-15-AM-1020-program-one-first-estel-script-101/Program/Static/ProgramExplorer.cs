@@ -10,11 +10,11 @@ namespace Core
     {
         internal static void Explorer(String path, Int32 ordinal)
         {
+            var boolean_safe__BIGGER_THAN = (ordinal > 5);
+
             Boolean shouldReturn;
 
-            var boolean_BIGGER_THAN = (ordinal > 5);
-
-            shouldReturn = boolean_BIGGER_THAN is true;
+            shouldReturn = boolean_safe__BIGGER_THAN is true;
 
             if (shouldReturn is true)
             {
@@ -25,7 +25,7 @@ namespace Core
 
             ProcessStartInfo processStartInfo;
 
-            processStartInfo = new ProcessStartInfo("explorer", path);
+            processStartInfo = new ProcessStartInfo(ImmutablePageOneFirst.ExplorerName, path);
 
             Process process;
 

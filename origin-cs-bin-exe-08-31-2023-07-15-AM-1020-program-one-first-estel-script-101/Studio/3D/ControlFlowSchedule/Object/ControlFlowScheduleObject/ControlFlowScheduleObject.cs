@@ -18,7 +18,7 @@ namespace Core
                 String.Empty + '\t' + '~' + "04" + ' ' + nameof(Schedule) + ':' + ' ' + ". . . . ." + ' ' + "<1>",
                 String.Empty + '}',
                 String.Empty,
-                String.Empty + '~' + "10" + ' ' + nameof(Control.File) + ':',
+                String.Empty + '~' + "10" + ' ' + nameof(Control) + ':',
                 String.Empty + '.' + nameof(Control.File),
                 String.Empty + Control.File,
                 String.Empty + '.' + nameof(Control.Content) + ' ' + "<safe>",

@@ -8,13 +8,22 @@ namespace Core
     {
         public static ProgramModule ProgramModuleFunctionTwo(ProgramModule module)
         {
-            var tuple = module.Program.ObserveTuple__FILE_DIRECTORY(module.First.CurrentDirectory);
+            Tuple<String[], String[]> observableTuple;
+
+            if (ArchitecturePageOneFirst.HasInputDirectory)
+            {
+                observableTuple = Program.ForgeObserveTuple__FILE_DIRECTORY(ArchitecturePageOneFirst.InputDirectory);
+            }
+            else
+            {
+                observableTuple = Program.ForgeObserveTuple__FILE_DIRECTORY(module.First.CurrentDirectory);
+            }
 
             String[] fileArray, directoryArray;
 
-            fileArray = tuple.Item1;
+            fileArray = observableTuple.Item1;
 
-            directoryArray = tuple.Item2;
+            directoryArray = observableTuple.Item2;
 
             ProgramModuleFunctionSecond second;
 

@@ -5,11 +5,7 @@
 
 	O LINK
 
-	O MODULE 
-
 	O STATIC
-
-	O INTEROP
 
 sequence Program : no unused namespace(s)
 
@@ -21,8 +17,10 @@ sequence Program : no unused namespace(s)
 
 	<Program.cs
 
-	o /object\OBJECT/ProgramObject.cs\
+	/object\OBJECT/ProgramObject.cs\
 
-	o /object\OBJECT/ProgramDataObject.cs\
+	/object\OBJECT/ProgramDataObject.cs\
+
+	/object\OBJECT/ProgramModule.cs\
 
 end sequence

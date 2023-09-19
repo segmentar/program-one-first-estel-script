@@ -10,7 +10,7 @@ namespace Core
 
         public FormBaseSequence(ControlFlowSchedule controlFlowSchedule, Int32[] positionArray, Boolean debug)
         {
-            Debug(debug);
+            Debug(controlFlowSchedule, positionArray, debug);
 
             String[] headerArray, headerArraySafe;
             

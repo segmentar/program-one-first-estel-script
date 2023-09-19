@@ -23,7 +23,7 @@ namespace Core
                 String.Empty + '}'
             });
 
-            Program.Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Debug}-ProgramDebug", descriptor);
+            Program.Render($"{ProgramCode.SpecialDirectory.Core_Debug}-ProgramDebug", descriptor);
 
             return;
         }

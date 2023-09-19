@@ -10,7 +10,7 @@ namespace Core
         {
             String stringResult = default;
 
-            var name = $"{Immutable.ProgramName}-{Immutable.WorkingDirectoryName}-{Immutable.WorkingDirectoryIdentity}";
+            var name = $"{ImmutablePageOneFirst.ProgramName}-{ImmutablePageOneFirst.WorkingDirectoryName}-{ImmutablePageOneFirst.WorkingDirectoryIdentity}";
 
             var lower = name.ToLower();
 

@@ -1,6 +1,0 @@
-FormLine :: FormLineSequence {
-	~01 content: 
-, tabulation program-0 ordinal-3 little-endian-signed-integer-bit-8 B: 2
-
-	~02 debug: True
-}

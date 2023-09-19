@@ -27,7 +27,9 @@ namespace Core
 
             path_NAME_directory = path_NAME_directory + ' ' + length;
 
-            stringResult = path_NAME_directory;
+            var result = path_NAME_directory;
+
+            stringResult = result;
 
             return stringResult;
         }

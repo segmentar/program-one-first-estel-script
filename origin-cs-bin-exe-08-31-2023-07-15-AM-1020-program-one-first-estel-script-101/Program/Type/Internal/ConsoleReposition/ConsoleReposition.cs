@@ -22,7 +22,7 @@ namespace Core
 
                 left = 16;
 
-                top = 31;
+                top = 41;
 
                 size = (left * top);
 
@@ -78,9 +78,9 @@ namespace Core
                 }
                 else
                 {
-                    Console.BackgroundColor = ArchitecturePageOneFirst.BackgroundColor;
+                    Console.BackgroundColor = ImmutablePageOneFirst.BackgroundColor;
 
-                    Console.ForegroundColor = ArchitecturePageOneFirst.ForegroundColor;
+                    Console.ForegroundColor = ImmutablePageOneFirst.ForegroundColor;
                 }
 
                 Console.CursorLeft = left;

@@ -8,11 +8,11 @@ namespace Core
     {
         public static ProgramModule ProgramModuleFunctionOne(ProgramModule module)
         {
-            var tuple = module.Program.CurrentSetup__FILE_DIRECTORY();
+            var tuple = Program.ForgeCurrentTuple__FILE_DIRECTORY();
 
             String workingDirectory;
 
-            workingDirectory = Program.ForgeWorkingDirectory(tuple.Item2);
+            workingDirectory = Program.ForgeWorkingDirectory(tuple.Item2, true);
 
             ProgramModuleFunctionFirst first;
 

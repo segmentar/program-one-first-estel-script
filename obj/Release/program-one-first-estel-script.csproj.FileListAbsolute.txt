@@ -1,0 +1,11 @@
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\program-one-first-estel-script.exe.config
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\program-one-first-estel-script.exe
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\program-one-first-estel-script.pdb
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\bin\Release\program-one-first-estel-script.exe.config
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\bin\Release\program-one-first-estel-script.exe
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\bin\Release\program-one-first-estel-script.pdb
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\obj\Release\program-one-first-estel-script.csproj.AssemblyReference.cache
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\obj\Release\program-one-first-estel-script.csproj.SuggestedBindingRedirects.cache
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\obj\Release\program-one-first-estel-script.csproj.CoreCompileInputs.cache
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\obj\Release\program-one-first-estel-script.exe
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-one-first-estel-script\obj\Release\program-one-first-estel-script.pdb

@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\program-three-third-estel-script\bin\Ware\OneFirst\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,10 +29,11 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\program-three-third-estel-script\bin\Ware\OneFirst\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,15 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Architecture\Architecture.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Interop\03\Chrf03.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Interop\05\Finf05.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Interop\02\Reff02.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Interop\06\Clsf06.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Interop\04\Escf04.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Interop\07\Outf07.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramRenderSpecialName.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Forge\ForgeObservableTuple.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Forge\ForgeCurrentTuple.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\05\Debf05IL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\01\Lenf01IL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\SettingTuple\ProgramContainerSettingTuple.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\SettingTuple\Surface\ProgramContainerSettingTupleSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\02\Linf02IL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\2D\Architecture\Architecture.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\06\Chrf06IL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\08\Finf08IL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\04\Reff04IL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\09\Clsf09OL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\07\Escf07IL.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\10\Outf10OL.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Module\Action\ProgramModuleAction.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\ArgumentColon\Surface\ProgramContainerArgumentColonSurface.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\ColonNameValue\Surface\ProgramContainerColonNameValueSurface.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\ArgumentEscapeCharacter\ProgramContainerArgumentEscapeCharacter.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\ArgumentEscapeCharacter\Surface\ProgramContainerArgumentEscapeCharacterSurface.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\ArgumentEscapeFormat\ProgramContainerArgumentEscapeFormat.cs" />
@@ -62,6 +71,10 @@
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\DirectoryName\Surface\ProgramContainerDirectoryNameSurface.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Part\ConsoleSetup\03\ConsoleSetupThreeThird.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Void\OutputDirectoryCopy\ProgramVoidOutputDirectoryCopy.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\2D\Specialize\GetEscape.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\2D\Specialize\SetEscapeCharacter.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\2D\Specialize\SetInputDirectory.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\2D\Specialize\SetOutputDirectory.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\ControlFlowSchedule\Default\Process.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\ControlFlowSchedule\Type\Forge\ForgeControlFlowScheduleTuple.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\FormBase\CompressRaw\FormBaseCompressRaw.cs" />
@@ -118,9 +131,9 @@
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\Form\Type\Set\Filename\FormSetFilename.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\Form\Type\Set\Filename\Surface\FormSetFilenameSurface.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\Form\Type\Void\RenderFormArray.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Immutable\Immutable.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\2D\Immutable\Immutable.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Data\ProgramData.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Interop\01\Subf01.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\1D\Interop\03\Subf03IL.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Link\Code\ProgramLinkCode.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Link\Default\ProgramLinkDefault.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Link\Policy\ProgramLinkPolicy.cs" />
@@ -139,7 +152,6 @@
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramExplorer.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramFree.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramRender.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramRenderDefaultName.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramRenderDirectoryName.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramRenderFileName.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Static\ProgramSafeString.cs" />
@@ -150,8 +162,6 @@
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Part\ConsoleSetup\00\ConsoleSetup.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Part\ConsoleSetup\01\ConsoleSetupOneFirst.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Part\ConsoleSetup\02\ConsoleSetupTwoSecond.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\CurrentSetup\CurrentSetup.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\ObserveTuple\ObserveTuple.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Forge\ForgeWorkingDirectory.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Internal\SettingSetup\SettingSetup.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Make\Default\ProgramMakeDefault.cs" />
@@ -181,7 +191,7 @@
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\3D\ControlFlowSchedule\Type\Set\Default\Surface\ControlFlowScheduleSetDefaultSurface.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\ObservableDirectory\ProgramSetObservableDirectory.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Set\ObservableDirectory\Surface\ProgramSetObservableDirectorySurface.cs" />
-    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\ArgumentColon\ProgramContainerArgumentColon.cs" />
+    <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Container\ColonNameValue\ProgramContainerColonNameValue.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Program\Type\Void\ApplyFullExtension\ProgramVoidApplyFullExtension.cs" />
     <Compile Include="origin-cs-bin-exe-08-31-2023-07-15-AM-1020-program-one-first-estel-script-101\Studio\4D\AssemblyInfo.cs" />
   </ItemGroup>

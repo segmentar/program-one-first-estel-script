@@ -1,11 +1,39 @@
 ﻿
-	This is document .
+	This is a document .
 
 	これ　は　文書　です　。
 
-	ة . (mustanad)
+	Це документ .
+
+	هذا مستند .
+
+	Това е документ .
+
+	,,,,,
 
 	This program, produces the following binary:
 
-	この　プログラム　次の　バイナリ　を　生成します：
+	この　プログラム は　次の　バイナリ　を　生成します :
+
+	Це .
+
+	هذا .
+
+	Тази програма, произвежда следната бинария:
+
+	,,,,,
+
+	0 byte(s) since the beginning
+	*endian-unsigned-integer-bit-8
+	Name `Endian Format` Field `endian-format`
+
+	0　バイト、開始以来
+	*エンディアンー符号なしー整数ービットー８
+	識別名 ‘エンディアンフォーマット‘ 項目 `endian-format`
+
+	0 баита след началото
+	*ендий-неотрицателен-интиджър-бит-8
+	Име 'Ений Формат' Фийлд 'ednian-format' 
+
+
 

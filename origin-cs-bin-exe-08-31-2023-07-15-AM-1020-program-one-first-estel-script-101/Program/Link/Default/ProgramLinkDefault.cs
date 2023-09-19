@@ -6,11 +6,11 @@ namespace Core
 
     using System.Collections;
 
-    internal partial class ProgramDefaultPageOneFirst
+    internal partial class ProgramDefaultArchitecturePageOneFirst
     {
-        internal static ConsoleColor BackgroundColorDefault;
+        internal static Boolean HasArgumentLengthDefault;
 
-        internal static ConsoleColor ForegroundColorDefault;
+        internal static Boolean HasLingerDefault;
 
         internal static Boolean IsExternalCallDefault;
 
@@ -20,15 +20,23 @@ namespace Core
 
         internal static Char EscapeCharacterDefault;
 
+        internal static Boolean HasInputDirectoryDefault;
+
         internal static Boolean HasOutputDirectoryDefault;
+
+        internal static String InputDirectoryDefault;
 
         internal static String OutputDirectoryDefault;
 
-        static ProgramDefaultPageOneFirst()
-        {
-            BackgroundColorDefault = ConsoleColor.Blue;
+        internal static String SettingNameDefault;
 
-            ForegroundColorDefault = ConsoleColor.Yellow;
+        internal static String SettingExtensionDefault;
+
+        static ProgramDefaultArchitecturePageOneFirst()
+        {
+            HasArgumentLengthDefault = default(Boolean);
+
+            HasLingerDefault = default(Boolean);
 
             IsExternalCallDefault = default(Boolean);
 
@@ -38,9 +46,17 @@ namespace Core
 
             EscapeCharacterDefault = default(Char);
 
+            HasInputDirectoryDefault = default(Boolean);
+
             HasOutputDirectoryDefault = default(Boolean);
 
+            InputDirectoryDefault = default(String);
+
             OutputDirectoryDefault = default(String);
+
+            SettingNameDefault = "Setting";
+
+            SettingExtensionDefault = "txt";
 
             return;
         }
@@ -51,24 +67,10 @@ namespace Core
 {
     using System;
 
-    using System.IO;
-
     using System.Text;
 
-    using System.Reflection;
-
-    internal partial class ProgramDefaultPageTwoSecond
+    internal partial class ProgramDefaultArchitecturePageTwoSecond
     {
-        internal static String ProgramNameDefault;
-
-        internal static String WorkingDirectoryNameDefault;
-
-        internal static String WorkingDirectoryIdentityDefault;
-
-        internal static String OutputFileNameDefault;
-
-        internal static String OutputExtensionDefault;
-
         internal static Boolean EndianFormatDefault;
 
         internal static Encoding StringCodecDefault;
@@ -81,18 +83,8 @@ namespace Core
 
         internal static String FullExtensionDefault;
 
-        static ProgramDefaultPageTwoSecond()
+        static ProgramDefaultArchitecturePageTwoSecond()
         {
-            ProgramNameDefault = Assembly.GetEntryAssembly().GetName().Name;
-
-            WorkingDirectoryNameDefault = "Working Directory";
-
-            WorkingDirectoryIdentityDefault = Path.GetRandomFileName();
-
-            OutputFileNameDefault = "Output";
-
-            OutputExtensionDefault = "package";
-
             EndianFormatDefault = BitConverter.IsLittleEndian;
 
             StringCodecDefault = Encoding.Default;
@@ -104,6 +96,63 @@ namespace Core
             StartBoundaryDefault = 128;
 
             FullExtensionDefault = String.Empty;
+
+            return;
+        }
+    }
+}
+
+namespace Core
+{
+    using System;
+
+    using System.IO;
+
+    using System.Reflection;
+
+    internal static class ProgramDefaultImmutablePageOneFirst
+    {
+        internal static String TitleDefault;
+
+        internal static ConsoleColor BackgroundColorDefault;
+
+        internal static ConsoleColor ForegroundColorDefault;
+
+        internal static String ProgramNameDefault;
+
+        internal static String WorkingDirectoryNameDefault;
+
+        internal static String WorkingDirectoryIdentityDefault;
+
+        internal static String ExplorerNameDefault;
+
+        internal static String OutputFileNameDefault;
+
+        internal static String OutputExtensionDefault;
+
+        internal static String SpecialErrorDefault;
+
+        static ProgramDefaultImmutablePageOneFirst()
+        {
+            TitleDefault = Assembly.GetEntryAssembly().GetName().Name;
+
+            BackgroundColorDefault = ConsoleColor.Blue;
+
+            ForegroundColorDefault = ConsoleColor.Yellow;
+
+            ProgramNameDefault = Assembly.GetEntryAssembly().GetName().Name;
+
+            WorkingDirectoryNameDefault = "Working Directory";
+
+            WorkingDirectoryIdentityDefault = Path.GetRandomFileName();
+
+            ExplorerNameDefault = "Explorer";
+
+            OutputFileNameDefault = "Output";
+
+            OutputExtensionDefault = "package";
+
+            SpecialErrorDefault = "This object just so happened to be a default" + ' ' + '.' + ' ' + ":(";
 
             return;
         }

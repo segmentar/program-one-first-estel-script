@@ -19,7 +19,7 @@ namespace Core
 
             collectionResult = new Collection<String>();
 
-            foreach (String stringItem in Enum.GetNames(typeof(ProgramCode.ObservableDirectory)))
+            foreach (String stringItem in Enum.GetNames(typeof(ProgramCode.SpecialDirectory)))
             {
                 var path_DIRECTORY_full_name = Path.Combine(Directory.GetCurrentDirectory(), stringItem);
 

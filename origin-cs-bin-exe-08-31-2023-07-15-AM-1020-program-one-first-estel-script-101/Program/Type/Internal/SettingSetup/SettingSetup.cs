@@ -5,15 +5,16 @@ namespace Core
     using System;
 
     using System.IO;
+
     using System.Text;
 
     internal partial class Program
     {
         internal void SettingSetup()
         {
-            var path_FILE_filename = Path.Combine(Directory.GetCurrentDirectory(), "Setting");
+            var path_FILE_filename = Path.Combine(Directory.GetCurrentDirectory(), ImmutablePageOneFirst.SettingName);
 
-            var path_FILE_filename_with_extension = Path.ChangeExtension(path_FILE_filename, "txt");
+            var path_FILE_filename_with_extension = Path.ChangeExtension(path_FILE_filename, ImmutablePageOneFirst.SettingExtension);
 
             if (File.Exists(path_FILE_filename_with_extension) is false)
             {
@@ -24,99 +25,69 @@ namespace Core
 
             var text = File.ReadAllText(path_FILE_filename_with_extension);
 
-            var linefeed = Convert.ToChar(10);
-
-            var split_U = text.Split(new String[] { linefeed.ToString() }, StringSplitOptions.None);
-
-            foreach (String stringItem in split_U)
+            foreach (Tuple<String, String> tuple in ProgramSettingTupleContainerSurface<Tuple<String, String>>(text))
             {
-                var split_V = stringItem.Split();
+                String name, value;
 
-                Boolean hasLength;
+                name = tuple.Item1;
 
-                hasLength = (split_V.Length > 0) is true;
+                value = tuple.Item2;
 
-                if (hasLength is false)
+                var reflect_BOOLEAN = default(Boolean);
+
+                var reflect_INTEGER = default(Int32);
+
+                try
                 {
-                    continue;
+                    reflect_BOOLEAN = Boolean.Parse(value);
                 }
-                else
-                    "false".ToString();
-
-                var eoth = (split_V.Length - 1);
-
-                var first = split_V[0];
-
-                var last = split_V[eoth];
-
-                Boolean 
-                    isExtension,
-                    isEndianFormat,
-                    isStringCodec,
-                    isChunkSize,
-                    isStartBoundary
-                    ;
-
-                isExtension = (first == nameof(ArchitecturePageTwoSecond.ExtensionName)) is true;
-
-                isEndianFormat = (first == nameof(ArchitecturePageTwoSecond.EndianFormat)) is true;
-
-                isStringCodec = (first == nameof(ArchitecturePageTwoSecond.StringCodec)) is true;
-
-                isChunkSize = (first == nameof(ArchitecturePageTwoSecond.ChunkSize)) is true;
-
-                isStartBoundary = (first == nameof(ArchitecturePageTwoSecond.StartBoundary)) is true;
-
-                if (isExtension is true)
+                catch (Exception exception)
                 {
-                    ArchitecturePageTwoSecond.ExtensionName = last;
+                    exception.ToString();
                 }
-                else
-                    "false".ToString();
 
-                if (isEndianFormat is true)
+                try
                 {
-                    Boolean boolean;
-
-                    boolean = Boolean.Parse(last);
-
-                    ArchitecturePageTwoSecond.EndianFormat = boolean;
+                    reflect_INTEGER = Int32.Parse(value);
                 }
-                else
-                    "false".ToString();
-
-                if (isStringCodec is true)
+                catch (Exception exception)
                 {
-                    Int32 integer;
-
-                    integer = Int32.Parse(last);
-
-                    ArchitecturePageTwoSecond.StringCodec = Encoding.GetEncoding(integer);
+                    exception.ToString();
                 }
-                else
-                    "false".ToString();
 
-                if (isChunkSize is true)
+                switch (name)
                 {
-                    Int32 integer;
+                    case nameof(ArchitecturePageOneFirst.InputDirectory):
+                        Specialize.SetInputDirectory(value, true);
+                        break;
 
-                    integer = Int32.Parse(last);
+                    case nameof(ArchitecturePageOneFirst.OutputDirectory):
+                        Specialize.SetOutputDirectory(value, true);
+                        break;
 
-                    ArchitecturePageTwoSecond.ChunkSize = integer;
+                    case nameof(ArchitecturePageTwoSecond.ExtensionName):
+                        ArchitecturePageTwoSecond.ExtensionName = value;
+                        break;
+
+                    case nameof(ArchitecturePageTwoSecond.EndianFormat):
+                        ArchitecturePageTwoSecond.EndianFormat = reflect_BOOLEAN;
+                        break;
+
+                    case nameof(ArchitecturePageTwoSecond.StringCodec):
+                        ArchitecturePageTwoSecond.StringCodec = Encoding.GetEncoding(reflect_INTEGER);
+                        break;
+
+                    case nameof(ArchitecturePageTwoSecond.ChunkSize):
+                        ArchitecturePageTwoSecond.ChunkSize = reflect_INTEGER;
+                        break;
+
+                    case nameof(ArchitecturePageTwoSecond.StartBoundary):
+                        ArchitecturePageTwoSecond.StartBoundary = reflect_INTEGER;
+                        break;
+
+                    default:
+                        break;
                 }
-                else
-                    "false".ToString();
-
-                if (isStartBoundary is true)
-                {
-                    Int32 integer;
-
-                    integer = Int32.Parse(last);
-
-                    ArchitecturePageTwoSecond.StartBoundary = integer;
-                }
-                else
-                    "false".ToString();
 
                 continue;
             }

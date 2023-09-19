@@ -4,8 +4,6 @@ namespace Core
 {
     using System;
 
-    using System.IO;
-
     internal partial class Program
     {
         internal static String[] ArgumentArray;
@@ -46,41 +44,47 @@ namespace Core
 
         internal static void Manual()
         {
-            Free(ProgramFolderSetSurface(Directory.GetCurrentDirectory()));
+            try
+            {
+                Interop.Lenf01IL();
 
-            ProgramModule programModule = ProgramModule.ProgramModuleAction();
+                Interop.Linf02IL();
+
+                Interop.Subf03IL();
+
+                if (ArchitecturePageOneFirst.HasLinger is true)
+                {
+                    Interop.Reff04IL();
+
+                    Interop.Debf05IL();
+
+                    Interop.Chrf06IL();
+
+                    Interop.Escf07IL();
+
+                    Interop.Finf08IL();
+                }
+                else
+                    "false".ToString();
+            }
+            catch (Exception exception)
+            {
+                exception.ToString();
+
+                Console.Clear();
+
+                Console.Out.WriteLine(exception);
+
+                Console.In.ReadLine();
+            }
+
+            ProgramModule programModule = ProgramModule.ProgramModuleAction(true, true, true, true, true);
 
             return;
         }
 
         internal static void Bundle()
         {
-            try
-            {
-                Interop.Subf01();
-
-                Interop.Reff02();
-
-                Interop.Charf03();
-
-                Interop.Escf04();
-
-                Interop.Finf05();
-            }
-            catch (Exception exception)
-            {
-                String stringitem;
-
-                stringitem = exception.ToString();
-
-                Console.Clear();
-
-                Console.Out.WriteLine(stringitem);
-
-                Console.In.ReadLine();
-
-                Environment.Exit(0);
-            }
 #if DEBUG
             Procedure();
 #endif
@@ -95,40 +99,38 @@ namespace Core
         {
             if (ProgramPolicy.ProgramInfoPolicy is true)
             {
-                Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Info}-ProgramInfo", ProgramPolicy.ProgramArrayList.ToArray());
+                Render($"{ProgramCode.SpecialDirectory.Core_Info}-ProgramInfo", ProgramPolicy.ProgramArrayList.ToArray());
             }
             else
                 "false".ToString();
 
             if (ControlFlowSchedulePolicy.ControlFlowScheduleInfoPolicy is true)
             {
-                Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Info}-ControlFlowScheduleInfo", ControlFlowSchedulePolicy.ControlFlowScheduleArrayList.ToArray());
+                Render($"{ProgramCode.SpecialDirectory.Core_Info}-ControlFlowScheduleInfo", ControlFlowSchedulePolicy.ControlFlowScheduleArrayList.ToArray());
             }
             else
                 "false".ToString();
 
             if (FormPolicy.FormInfoPolicy is true)
             {
-                Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Info}-FormInfo", FormPolicy.FormArrayList.ToArray());
+                Render($"{ProgramCode.SpecialDirectory.Core_Info}-FormInfo", FormPolicy.FormArrayList.ToArray());
             }
             else
                 "false".ToString();
 
             if (FormBasePolicy.FormBaseInfoPolicy is true)
             {
-                Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Info}-FormBaseInfo", FormBasePolicy.FormBaseArrayList.ToArray());
+                Render($"{ProgramCode.SpecialDirectory.Core_Info}-FormBaseInfo", FormBasePolicy.FormBaseArrayList.ToArray());
             }
             else
                 "false".ToString();
 
             if (FormLinePolicy.FormLineInfoPolicy is true)
             {
-                Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Info}-FormLineInfo", FormLinePolicy.FormLineArrayList.ToArray());
+                Render($"{ProgramCode.SpecialDirectory.Core_Info}-FormLineInfo", FormLinePolicy.FormLineArrayList.ToArray());
             }
             else
                 "false".ToString();
-
-            Explorer(Directory.GetCurrentDirectory(), 1);
 
             return;
         }

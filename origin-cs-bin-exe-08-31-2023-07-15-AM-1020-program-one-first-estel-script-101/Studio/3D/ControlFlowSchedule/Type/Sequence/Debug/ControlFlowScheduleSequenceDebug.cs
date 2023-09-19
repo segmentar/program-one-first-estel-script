@@ -25,7 +25,7 @@ namespace Core
                 String.Empty + '}'
             });
 
-            Program.Render($"{ProgramCode.ObservableDirectory.Core}-{ProgramCode.ObservableDirectory.Debug}-ControlFlowScheduleDebug", 1, descriptor);
+            Program.Render($"{ProgramCode.SpecialDirectory.Core_Debug}-ControlFlowScheduleDebug", 1, descriptor);
 
             return;
         }

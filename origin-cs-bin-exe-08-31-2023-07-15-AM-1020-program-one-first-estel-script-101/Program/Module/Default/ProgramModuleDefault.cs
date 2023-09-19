@@ -12,9 +12,14 @@ namespace Core
 
             program = Program.MakeProgramDefaultSurface();
 
-            program.SettingSetup();
+            if (ArchitecturePageOneFirst.IsExternalCall is false)
+            {
+                program.SettingSetup();
 
-            program.ConsoleSetup();
+                program.ConsoleSetup();
+            }
+            else
+                "false".ToString();
 
             ProgramModule module;
 

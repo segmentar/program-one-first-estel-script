@@ -1,4 +1,0 @@
-Program :: ProgramData {
-.data
-	~01 IsDebug: True
-}
